@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Orders">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Order" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="OrderNo" type="xs:string"/>
+                            <xs:element name="Material" type="xs:string"/>
+                            <xs:element name="Amount" type="xs:string"/>
+                            <xs:element name="Currency" type="xs:string"/>
+                            <xs:element name="Status" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
