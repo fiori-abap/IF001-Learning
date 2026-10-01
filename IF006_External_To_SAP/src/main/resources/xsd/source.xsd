@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="ExternalOrders">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="ExternalOrder"
+                            minOccurs="0"
+                            maxOccurs="unbounded">
+
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="externalOrderNo"
+                                        type="xs:string"/>
+
+                            <xs:element name="externalItemNo"
+                                        type="xs:string"/>
+
+                            <xs:element name="productCode"
+                                        type="xs:string"/>
+
+                            <xs:element name="grossAmount"
+                                        type="xs:decimal"/>
+
+                            <xs:element name="currencyCode"
+                                        type="xs:string"/>
+
+                            <xs:element name="status"
+                                        type="xs:string"/>
+
+                            <xs:element name="sourceSystem"
+                                        type="xs:string"/>
+
+                        </xs:sequence>
+                    </xs:complexType>
+
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
